@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+.#{$prefix} {
+  &-ff-base {
+    font-family: $font-family-base;
+  }
+}
+
+.#{$prefix} {
+  &-ff-accent {
+    font-family: $font-family-accent;
+  }
+}
