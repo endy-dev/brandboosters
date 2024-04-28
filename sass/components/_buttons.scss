@@ -7,6 +7,7 @@
     cursor: pointer;
     text-decoration: none;
     line-height: 1;
+    background-color: $button-default-background;
     font-family: $button-font-family;
     font-size: $button-font-size;
     text-transform: $button-text-transform;
@@ -15,6 +16,11 @@
     border: $button-border;
     border-radius: $button-border-radius;
     transition: 275ms ease;
+
+    &:hover,
+    &:focus {
+      background-color: $button-default-hover-background;
+    }
 
     &[data-type="accent"] {
       background-color: $button-accent-background;

@@ -12,6 +12,12 @@
   }
 }
 
+.#{$prefix} {
+  &-my-auto {
+    margin-block: auto;
+  }
+}
+
 @each $size-name, $size-value in $sizes {
   .#{$prefix} {
     &-margin {
