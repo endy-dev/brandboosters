@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+.#{$prefix} {
+  &-full-height-column {
+    &[data-position="right"] {
+      margin-bottom: calc($section-padding-block * -1);
+    }
+    &[data-position="left"] {
+      margin-top: calc($section-padding-block * -1);
+    }
+
+    @include mq(medium) {
+      height: calc(100% + $section-padding-block * 2);
+      margin-top: calc($section-padding-block * -1);
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
